@@ -1,0 +1,253 @@
+/* Estilos para la página de inicio de Claro */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4a00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 2rem;
+
+}
+
+nav a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ff4a00;
+}
+
+.hero {
+  background-image: url(img/gordo-logo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cta {
+  background-color: #ff4a00;
+  padding: 4rem 2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.cta h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.cta p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta button {
+  background-color: #fff;
+  color: #ff4a00;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta button:hover {
+  background-color: #ff4a00;
+  color: #fff;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f7f7f7;
+}
+
+main {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section {
+  width: calc(50% - 20px);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #ff7f50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+ul li .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+ul li span {
+  font-size: 16px;
+}
+
+.button {
+  background-color: #ff8c00;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #ff6b00;
+}
+
+
+/* Agregar animaciones a los enlaces del menú */
+nav ul li a,
+footer ul li a {
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover,
+footer ul li a:hover {
+  transform: scale(1.2);
+}
+
+/* Agregar animaciones a las secciones */
+.services,
+.offers,
+.support {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+
+
